@@ -1,0 +1,68 @@
+.notesHolder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px 56px;
+    justify-content: flex-start;
+}
+
+.note{
+    position: relative;
+    width: 215px;
+    height: 285px;
+    background-color: #FFCE76;
+    border-radius: 20px;
+    margin-top: 46px;
+}
+
+.note > *{
+    padding: 15px;
+}
+
+.note h1{
+    font-size: 20px;
+}
+
+.note p{
+    font-size: 12px;
+}
+
+.note img {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+.editNote {
+    width: 119px;
+    height: 117px;
+    background-color: #F5C05F;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.editNote.active {
+    display: flex;
+  }
+
+.action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    height: 33.33%;
+    border-bottom: 1px solid #000000;
+}
+
+.action img {
+    margin-right: 8px;
+}
+
+.action:last-child {
+    border-bottom: none;
+}
